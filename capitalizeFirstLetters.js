@@ -1,4 +1,3 @@
-const assert = require('assert');
 
 function capitalizeFirstLetters(input) {
     const words = input.split(' ');
@@ -8,9 +7,4 @@ function capitalizeFirstLetters(input) {
     return words.join(' ');
   }
 
-assert.strictEqual(typeof capitalizeFirstLetters,'function');
-assert.strictEqual(capitalizeFirstLetters.length, 1);
-assert.strictEqual(capitalizeFirstLetters('hello'), 'Hello');
-assert.strictEqual(capitalizeFirstLetters('i am learning TDD'), 'I Am Learning TDD');
-assert.strictEqual(capitalizeFirstLetters("z"), "Z");
-assert.strictEqual(capitalizeFirstLetters(""), "");
+  module.exports = capitalizeFirstLetters;
